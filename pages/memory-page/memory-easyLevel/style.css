@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+#page {
+  background: url(../../memory-page/assets/bg-memory.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  width: 100%;
+  height: 100vh;
+}
+
+/* estilização header */
+
+header {
+  margin: 0 auto 20px;
+  width: 90%;
+  max-width: 1020px;
+}
+
+header img {
+  width: 100%;
+  max-width: 1020px;
+}
+
+/*estilização do main*/
+main {
+  width: 70%;
+  margin: 0 auto;
+  max-width: 1020px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+/* estilização grid-cards*/
+#grid-cards {
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+}
+
+#btn-options {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+#out {
+  background: red;
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 4px 8px 8px 4px;
+  border: solid #000 2px;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+
+  width: 140px;
+  height: 40px;
+}
+
+#new-game:hover {
+  background: red;
+  color: #fff;
+  background-image: -webkit-linear-gradient(top, red, #2980b9);
+  background-image: -moz-linear-gradient(top, red, #2980b9);
+  background-image: -ms-linear-gradient(top, red, #2980b9);
+  background-image: -o-linear-gradient(top, red, #2980b9);
+  background-image: linear-gradient(to bottom, red, #2980b9);
+  text-decoration: none;
+}
+
+#new-game {
+  background: #2980b9;
+
+  border-radius: 8px;
+  text-shadow: 1px 1px 3px #383838;
+  color: #fff;
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: bold;
+  padding: 4px 8px 8px 4px;
+  border: solid #000 2px;
+  text-decoration: none;
+  cursor: pointer;
+
+  width: 140px;
+  height: 40px;
+}
+
+#out:hover {
+  background: red;
+  color: #fff;
+  background-image: -webkit-linear-gradient(top, red, #2980b9);
+  background-image: -moz-linear-gradient(top, red, #2980b9);
+  background-image: -ms-linear-gradient(top, red, #2980b9);
+  background-image: -o-linear-gradient(top, red, #2980b9);
+  background-image: linear-gradient(to bottom, red, #2980b9);
+  text-decoration: none;
+}
+
+@media (max-width: 425px){
+  html {
+    font-size: 40%;
+  }
+
+  header {
+    display: none;
+  }
+
+  main {
+    width: 70%;
+    margin: 0 auto;
+    max-width: 375px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+  }
+
+  #grid-cards {
+    position: absolute;
+    top: 220px;
+    width: 100%;
+    max-width: 425px;
+  }
+
+  #btn-options{
+    margin-top: 20px;
+  }
+
+  #out {
+    height: 30px;
+  }
+
+  #new-game {
+    height: 30px;
+  }
+}
+
+@media (max-width: 400px){
+
+  #btn-options{
+    margin-top: 20px;
+  }
+
+  #grid-cards {
+    max-width: 320px;
+    grid-template-columns: repeat(3, auto);
+    top: 150px;
+
+  }
+}

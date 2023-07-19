@@ -1,0 +1,358 @@
+body {
+  margin: 0;
+  background-image: url(../../assets/bg-paintv2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: sans-serif;
+  height: 100vh;
+
+}
+
+/* elementos do header */ 
+
+header {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  margin: 20px auto 20px;
+  width: 100%;
+  max-width: 1200px;
+
+  background-color: azure;
+  border-radius: 15px;
+}
+
+header img {
+  width: 80px;
+}
+
+h3 {
+  color: orangered;
+  text-align: center;
+}
+
+/* elementos do main */
+
+main {
+  display: flex;
+
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px auto 20px;
+  align-items: center;
+  justify-content: space-evenly;
+
+  /* border: 1px solid red; */
+  cursor: pointer;
+}
+
+/*
+.paint-area{
+  cursor: url(../../assets/cursor.png), default;
+}
+*/
+
+#content{
+ /* border: 1px solid green; */
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+#selected {
+  margin: 0 auto;
+  width: 50px;
+  height: 50px;
+  border: 3px solid black;
+}
+
+#selectedColor {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+#choseColor #colors {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 14px;
+  background: azure;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+#colors > div {
+  width: 30px;
+  height: 30px;
+  border-radius: 20px;
+  border: 1px solid black;
+}
+
+#picker {
+  border: 2px solid black;
+  width: 80px;
+  height: 40px;
+  background: azure;
+  margin: 0 auto;
+}
+
+#buttons {
+  width: 100%;
+  max-width: 700;
+  margin: 14px auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+#resetColors {
+
+  background: #fdb800;
+  border-radius: 4px;
+  color: #000;
+  font-size: 16px;
+  padding: 4px 8px 4px;
+  border: 2px solid #000;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+
+ 
+}
+
+#resetColors:hover {
+background: #fdb800;
+background-image: -webkit-linear-gradient(top, #fdb800, #01b3f5);
+background-image: -moz-linear-gradient(top, #fdb800, #01b3f5);
+background-image: -ms-linear-gradient(top, #fdb800, #01b3f5);
+background-image: -o-linear-gradient(top, #fdb800, #01b3f5);
+background-image: linear-gradient(to bottom, #fdb800, #01b3f5);
+text-decoration: none;
+
+transition: 1s ease;
+}
+
+#btn-salvar {
+
+  background: #fdb800;
+  border-radius: 4px;
+  color: #000;
+  font-size: 16px;
+  padding: 4px 8px 4px;
+  border: 2px solid #000;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+
+ 
+}
+
+#btn-salvar:hover {
+background: #fdb800;
+background-image: -webkit-linear-gradient(top, #fdb800, #01b3f5);
+background-image: -moz-linear-gradient(top, #fdb800, #01b3f5);
+background-image: -ms-linear-gradient(top, #fdb800, #01b3f5);
+background-image: -o-linear-gradient(top, #fdb800, #01b3f5);
+background-image: linear-gradient(to bottom, #fdb800, #01b3f5);
+text-decoration: none;
+
+transition: 1s ease;
+}
+
+#btn-voltar {
+  background: #fdb800;
+  border-radius: 4px;
+  color: #000;
+  font-size: 16px;
+  padding: 4px 8px 4px;
+  border: 2px solid #000;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+#btn-voltar:hover {
+  background: #fdb800;
+  background-image: -webkit-linear-gradient(top, #fdb800, #01b3f5);
+  background-image: -moz-linear-gradient(top, #fdb800, #01b3f5);
+  background-image: -ms-linear-gradient(top, #fdb800, #01b3f5);
+  background-image: -o-linear-gradient(top, #fdb800, #01b3f5);
+  background-image: linear-gradient(to bottom, #fdb800, #01b3f5);
+  text-decoration: none;
+  
+  transition: 1s ease;
+}
+
+/* elementos do footer */
+footer {
+  /*border: 1px solid green;*/
+  width: 100%;
+  max-width: 1020px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+footer .anotherImages {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 auto;
+  list-style: none;
+  gap: 20px;
+}
+
+.anotherImages li img {
+  width: 140px;
+}
+
+@media (max-width: 768px){
+  body {
+    height: 210vh;
+  }
+  header {
+    max-width: 700px;
+  }
+  main {
+    flex-direction: column;
+    gap: 20px;
+    max-width: 700px;
+    align-items: center;
+  }
+  #content {
+    flex-direction: column;
+  }
+  #selected{
+    flex-direction: row;
+  }
+  #choseColor #colors {
+    grid-template-columns: repeat(12, auto);
+  }
+  #buttons{
+   flex-direction: row;
+   justify-content: center;
+  }
+  #resetColors {
+    width: 120px;
+  }
+  #btn-salvar {
+    width: 120px;
+  }
+  #btn-voltar {
+    width: 120px;
+  }
+  footer {
+    max-width: 700px;
+  }
+  footer .anotherImages {
+    margin-top: 40px;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 425px) {
+  body {
+    height: 230vh;
+  }
+  header {
+    display: none;
+  }
+  main {
+    max-width: 400px;
+    justify-content: center;
+  }
+  .paint-area svg {
+    width: 400px;
+  }
+  #choseColor #colors {
+    grid-template-columns: repeat(6, auto);
+    gap: 10px;
+  }
+  footer {
+    max-width: 400px;
+    margin-right: 60px;
+  }
+  footer .anotherImages{
+    max-width: 400px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+  }
+  .anotherImages li img {
+    width: 160px;
+  }
+}
+
+@media (max-width: 375px) {
+  main {
+    max-width: 300px;
+    justify-content: center;
+  }
+  .paint-area svg {
+    width: 300px;
+  }
+  #choseColor #colors {
+    grid-template-columns: repeat(6, auto);
+    gap: 10px;
+    width: 300px;
+    padding: 5px;
+    margin: 0 auto;
+  }
+  footer {
+    max-width: 300px;
+    margin-left: 20px;
+  }
+  footer .anotherImages{
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+  }
+  .anotherImages li img {
+    width: 160px;
+  }
+}
+
+@media (max-width: 320px) {
+  main {
+    max-width: 280px;
+    justify-content: center;
+  }
+  .paint-area svg {
+    width: 280px;
+  }
+  #choseColor #colors {
+    grid-template-columns: repeat(6, auto);
+    gap: 10px;
+    width: 280px;
+    padding: 5px;
+    margin: 0 auto;
+  }
+  #resetColors {
+    width: 80px;
+  }
+  #btn-salvar {
+    width: 80px;
+  }
+  #btn-voltar {
+    width: 80px;
+  }
+  footer {
+    max-width: 280px;
+    margin: 0;
+  }
+  footer .anotherImages{
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+  }
+  .anotherImages li img {
+    width: 120px;
+  }
+}

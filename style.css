@@ -1,0 +1,342 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  /*font-family: 'Open Sans', sans-serif;*/
+}
+
+body{
+  background: url(./assets/TelaInicial/bg-telaInicial.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+/* elementos do header */
+header{
+ /* border: 1px solid red; */
+
+  width: 1020px;
+  height: 120px;
+  margin: 20px auto;
+}
+
+header img {
+  width: 260px;
+  height: 120px;
+  animation: logoNavegaFeliz-float 2s ease-in-out infinite;
+}
+
+/* elementos do main */
+
+main {
+ /* border: 1px solid green; */
+
+  width: 1020px;
+  height: 420px;
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-items: center;
+}
+
+main section h1{
+  position:absolute;
+  width: 300px;
+  line-height: 28px;
+  font-size: 24px;
+  text-align: center;
+  margin-top: -140px;
+  margin-left: 360px;
+  animation: h1-speechBubble-float 1.2s ease-in-out infinite;
+}
+
+#span-navega{
+  color: #2980b9 ;
+}
+
+#span-feliz{
+  color: #fdb800 ;
+}
+
+#speechBubble{
+    z-index: -1;
+    width: 380px;
+    height: 320px;
+    position: absolute;
+    margin-top: -240px;
+    margin-left: 320px;
+    animation: speechBubble-float 2s ease-in-out infinite;
+}
+
+#img-menina {
+    width: 450px;
+    height: 400px;
+    margin-top: 140px;
+    position: relative;
+    animation: menina-float 2s ease-in-out infinite;
+}
+
+/* elementos do footer */
+footer {
+ /* border: 1px solid yellow; */
+  
+  width: 1020px;
+  margin: -50px auto;
+}
+
+footer ul {
+  display: flex;
+  justify-content: flex-start;
+  gap: 80px;
+  list-style: none;
+}
+
+footer ul li{
+  display: flex;
+}
+
+footer ul li img {
+  width: 30px;
+}
+
+footer ul li a {
+  background: #fdb800;
+  
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  color: #000000;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 4px 8px 8px 10px;
+  border: solid #000000 2px;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+
+  width: 140px;
+  height: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px ;
+}
+
+footer ul li a:hover {
+  background: #fdb800;
+  color: #fff;
+  font-weight: 400;
+  background-image: -webkit-linear-gradient(top, #fdb800, #2980b9);
+  background-image: -moz-linear-gradient(top, #fdb800, #2980b9);
+  background-image: -ms-linear-gradient(top, #fdb800, #2980b9);
+  background-image: -o-linear-gradient(top, #fdb800, #2980b9);
+  background-image: linear-gradient(to bottom, #fdb800, #2980b9);
+  text-decoration: none;
+
+}
+
+
+/* animações css */
+/* animação logo */
+@keyframes logoNavegaFeliz-float {
+  0%,100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+/* animação speechBubble */
+@keyframes speechBubble-float {
+  0%,100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+/* animação h1 no speechBubble*/
+@keyframes h1-speechBubble-float {
+  0%,100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+/* animação menina */
+@keyframes menina-float {
+  0%,100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+/* responsividade */
+@media screen and (max-width: 768px) {
+  body{
+   background: url(./assets/TelaInicial/bg-telaInicial.jpg)
+  }
+}
+
+@media screen and (max-width: 425px) {
+  body{
+   background: url(./assets/TelaInicial/bg-telaInicial.jpg);
+   backdrop-filter: blur(15px);
+  }
+
+  header{
+   /* border: 1px solid red; */
+   
+     width: 400px;
+     margin: 0 auto;
+   }
+
+   header img {
+    width: 200px;
+  }
+
+  main {
+    /* border: 1px solid green; */
+     width: 400px;
+     height: 500px;
+   }
+   
+   main section h1{
+    margin-left: 40px;
+    width: 180px
+  }
+
+  #speechBubble { 
+    width: 200px;
+    height: 260px;
+    position: absolute;
+    margin-top: -200px;
+    margin-left: 30px;
+  }
+
+  #img-menina {
+    width: 250px;
+    height: 380px;
+    margin-top: 60px;
+    margin-left: 150px;
+    position: absolute;
+  }
+
+  footer {
+     /*border: 1px solid yellow; */
+     
+     width: 400px;
+     margin: -100px auto;
+   }
+   
+   footer ul {
+     display: flex;
+     flex-direction: column;
+     gap: 10px; 
+     margin-left: 5px;  
+   }
+}
+
+@media screen and (max-width: 375px) {
+  header{
+     width: 325px;
+     margin: 0 auto;
+   }
+
+   header img {
+    width: 200px;
+  }
+
+  main {
+     width: 325px;
+   }
+   
+   main section h1{
+    margin-left: 25px;
+    width: 130px
+  }
+
+  #speechBubble { 
+    width: 200px;
+    height: 320px;
+    margin-top: -240px;
+    margin-left: 0px;
+  }
+
+  #img-menina {
+    width: 200px;
+    height: 400px;
+    margin-top: 100px;
+    margin-left: 140px;
+    position: absolute;
+  }
+
+  footer {   
+     width: 325px;
+     margin: -200px auto;
+   }
+   
+   footer ul {
+     width: 275px;
+     display: flex;
+     flex-direction: column;
+     gap: 8px; 
+     margin-top: 40px;
+     margin-left: 10px;  
+   }
+}
+
+@media screen and (max-width: 320px) {
+  header{
+     width: 300px;
+     margin: 0 auto;
+   }
+
+  main {
+     width: 300px;
+   }
+   
+   main section h1{
+    margin-left: 10px;
+    width: 120px
+  }
+
+  #speechBubble { 
+    width: 190px;
+    height: 320px;
+    margin-top: -240px;
+    margin-left: -10px;
+  }
+
+  #img-menina {
+    width: 200px;
+    height: 400px;
+    margin-top: 100px;
+    margin-left: 110px;
+    position: absolute;
+  }
+
+  footer {   
+     width: 240px;
+     margin: -200px auto;
+   }
+   
+   footer ul {
+     width: 275px;
+     display: flex;
+     flex-direction: column;
+     gap: 8px; 
+     margin-top: 40px;
+     margin-left: -30px; 
+   }
+}
