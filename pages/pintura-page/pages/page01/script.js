@@ -83,7 +83,8 @@ function downloadPDF() {
   window.focus();
   }
 
-  document.getElementById('paint-area').printMe()
+  //document.getElementById('paint-area').printMe()
+  document.getElementsByClassName('paint-area')[0].printMe();
 
   /*
   var opt = {
