@@ -66,6 +66,7 @@ reset.addEventListener('click', () => {
 
 // download to PDF
 function downloadPDF() {
+
   HTMLElement.prototype.printMe = printMe;
   function printMe(query){
   var myframe = document.createElement('IFRAME');
@@ -78,11 +79,11 @@ function downloadPDF() {
   myframe.focus();
   myframe.contentWindow.print();
   myframe.parentNode.removeChild(myframe) ;// remove frame
-  },3000); // wait for images to load inside iframe
+  },200); // wait for images to load inside iframe
   window.focus();
   }
-  const item = document.getElementsByClassName(".paint-area")[0];
-  item.printMe()
+
+  document.getElementById('paint-area').printMe()
 
   /*
   var opt = {

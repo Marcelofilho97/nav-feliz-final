@@ -53,6 +53,26 @@ reset.addEventListener('click', () => {
 
 // download to PDF
 function downloadPDF() {
+
+  HTMLElement.prototype.printMe = printMe;
+  function printMe(query){
+  var myframe = document.createElement('IFRAME');
+  myframe.domain = document.domain;
+  myframe.style.position = "absolute";
+  myframe.style.top = "-10000px";
+  document.body.appendChild(myframe);
+  myframe.contentDocument.write(this.innerHTML) ;
+  setTimeout(function(){
+  myframe.focus();
+  myframe.contentWindow.print();
+  myframe.parentNode.removeChild(myframe) ;// remove frame
+  },200); // wait for images to load inside iframe
+  window.focus();
+  }
+
+  document.getElementById('paint-area').printMe()
+
+  /*
   const item = document.querySelector(".paint-area");
 
   var opt = {
@@ -63,4 +83,5 @@ function downloadPDF() {
   };
 
   html2pdf().set(opt).from(item).save();
+  */
 }

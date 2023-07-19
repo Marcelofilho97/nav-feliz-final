@@ -117,11 +117,11 @@ p {
 /* responsividade media-queries */
 @media (max-width: 768px){
   html {
-    font-size: 60%;
+    font-size: 50%;
   }
 
   #page {
-    height: 120vh;
+    height: 100vh;
   }
 
   main {
