@@ -214,7 +214,7 @@ footer .anotherImages {
 
 @media (max-width: 768px){
   body {
-    height: 210vh;
+    height: 180vh;
   }
   header {
     max-width: 700px;
@@ -258,7 +258,7 @@ footer .anotherImages {
 
 @media (max-width: 425px) {
   body {
-    height: 230vh;
+    height: 130vh;
   }
   header {
     display: none;
