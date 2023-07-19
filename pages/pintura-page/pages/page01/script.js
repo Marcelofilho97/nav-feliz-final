@@ -73,7 +73,13 @@ function downloadPDF() {
       var win = window.open();  
       win.document.write(conteudo);  
       win.print();  
-      //win.close();//Fecha após a impressão.  
+      
+      setTimeout(() => {
+        win.close();
+      }, 400)
+
+      
+      //Fecha após a impressão.  
   } 
 
   printDiv("paint-area")
