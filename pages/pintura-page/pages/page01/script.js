@@ -67,31 +67,16 @@ reset.addEventListener('click', () => {
 // download to PDF
 function downloadPDF() {
 
-  function printDiv(divName) {
-    var printContents = document.getElementById(divName).innerHTML;
-    var originalContents = document.body.innerHTML;
-
-    document.body.innerHTML = printContents;
-
-    window.print();
-
-    document.body.innerHTML = originalContents;
-}
-
-printDiv("paint-area")
-
-  /*
   function printDiv(divID)  
   {
       var conteudo = document.getElementById(divID).innerHTML;  
       var win = window.open();  
       win.document.write(conteudo);  
       win.print();  
-      win.close();//Fecha após a impressão.  
+      //win.close();//Fecha após a impressão.  
   } 
 
   printDiv("paint-area")
-  */
 
   /*
   HTMLElement.prototype.printMe = printMe;
