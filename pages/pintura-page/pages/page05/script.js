@@ -57,6 +57,23 @@ reset.addEventListener('click', () => {
 
 // download to PDF
 function downloadPDF() {
+  
+  function printDiv(divID)  
+  {
+      var conteudo = document.getElementById(divID).innerHTML;  
+      var win = window.open();  
+      win.document.write(conteudo);  
+      win.print();  
+      
+      setTimeout(() => {
+        win.close();
+      }, 400)
+      //Fecha após a impressão.  
+  } 
+  printDiv("paint-area")
+
+
+  /*
   HTMLElement.prototype.printMe = printMe;
   function printMe(query){
   var myframe = document.createElement('IFRAME');
@@ -74,6 +91,7 @@ function downloadPDF() {
   }
 
   document.getElementById('paint-area').printMe()
+  */
   /*
   const item = document.querySelector(".paint-area");
 

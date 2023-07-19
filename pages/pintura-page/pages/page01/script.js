@@ -77,8 +77,6 @@ function downloadPDF() {
       setTimeout(() => {
         win.close();
       }, 400)
-
-      
       //Fecha após a impressão.  
   } 
 
