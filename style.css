@@ -27,6 +27,8 @@ header img {
   width: 260px;
   height: 120px;
   animation: logoNavegaFeliz-float 2s ease-in-out infinite;
+  margin-top: 40px;
+  margin-left: 40px;
 }
 
 /* elementos do main */
@@ -204,6 +206,7 @@ footer ul li a:hover {
   }
 
   main section h1 {
+    margin-top: 20px;
     margin-left: 40px;
     width: 200px;
   }
@@ -214,14 +217,14 @@ footer ul li a:hover {
     height: 260px;
     position: absolute;
     margin-top: -180px;
-    margin-left: 30px;
+    margin-left: 50px;
   }
 
   #img-menina {
     width: 250px;
     height: 380px;
     margin-top: 60px;
-    margin-left: 150px;
+    margin-left: 200px;
     position: absolute;
   }
 
