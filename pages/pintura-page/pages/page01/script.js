@@ -72,8 +72,11 @@ function downloadPDF() {
       var conteudo = document.getElementById(divID).innerHTML;  
       var win = window.open();  
       win.document.write(conteudo);  
-      win.print();  
-      win.close();
+      win.print(); 
+      setTimeout(() => {
+        win.close();
+      }, 120000) 
+     
       //Fecha após a impressão.  
   } 
 

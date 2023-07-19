@@ -59,7 +59,9 @@ function downloadPDF() {
       var win = window.open();  
       win.document.write(conteudo);  
       win.print();  
-      win.close();
+      setTimeout(() => {
+        win.close();
+      }, 120000) 
        //Fecha após a impressão.  
   } 
 
