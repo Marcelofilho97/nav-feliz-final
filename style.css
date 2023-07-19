@@ -206,17 +206,16 @@ footer ul li a:hover {
   }
 
   main section h1 {
-    margin-top: 20px;
-    margin-left: 40px;
+    margin-left: 80px;
     width: 200px;
   }
 
   
   #speechBubble { 
-    width: 250px;
+    width: 270px;
     height: 260px;
     position: absolute;
-    margin-top: -180px;
+    margin-top: -210px;
     margin-left: 50px;
   }
 
@@ -224,7 +223,7 @@ footer ul li a:hover {
     width: 250px;
     height: 380px;
     margin-top: 60px;
-    margin-left: 200px;
+    margin-left: 240px;
     position: absolute;
   }
 
