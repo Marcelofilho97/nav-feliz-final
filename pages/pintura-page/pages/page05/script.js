@@ -64,10 +64,7 @@ function downloadPDF() {
       var win = window.open();  
       win.document.write(conteudo);  
       win.print();  
-      
-      setTimeout(() => {
-        win.close();
-      }, 10000)
+      win.close();
       //Fecha após a impressão.  
   } 
   printDiv("paint-area")
