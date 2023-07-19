@@ -188,6 +188,58 @@ footer ul li a:hover {
    background: url(./assets/TelaInicial/bg-telaInicial.jpg);
    background-repeat: no-repeat;
   }
+
+  header {
+    width: 720px;
+    margin: 0 auto;
+  }
+
+  header img {
+    width: 200px
+  }
+
+  main {
+    width:  600px;
+    height: 500px;
+  }
+
+  main section h1 {
+    margin-left: 40px;
+    width: 200px;
+  }
+
+  
+  #speechBubble { 
+    width: 250px;
+    height: 260px;
+    position: absolute;
+    margin-top: -180px;
+    margin-left: 30px;
+  }
+
+  #img-menina {
+    width: 250px;
+    height: 380px;
+    margin-top: 60px;
+    margin-left: 150px;
+    position: absolute;
+  }
+
+  footer {
+     /*border: 1px solid yellow; */
+     
+     width: 400px;
+     margin: -100px auto;
+   }
+   
+   footer ul {
+     display: flex;
+     flex-direction: column;
+     gap: 10px; 
+     margin-left: 5px;  
+   }
+
+
 }
 
 @media screen and (max-width: 425px) {
