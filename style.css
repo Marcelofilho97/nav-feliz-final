@@ -10,7 +10,7 @@ body{
   background: url(./assets/TelaInicial/bg-telaInicial.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: auto;
+  height: 100vh;
 }
 
 
